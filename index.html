@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wires.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="nav-group">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </div>
+            <li><a href="#" id="contactLink" >Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container main">
+        <section id="home" class="home">
+            <!-- <button id="toggleButton">Toggle Wires</button> -->
+            <div class="wire" id="wire"></div>
+            <div class="wire" id="wire2"></div>
+            <div class="wire" id="wire3"></div>
+            <div class="wire" id="wire4"></div> 
+            <div class="wire" id="wire15"></div>
+            <div class="wire" id="wire16"></div>
+        <div class="hometext">
+            <h1 class="animated-text h1-1" style="top:20%; border: 3px solid chartreuse; z-index: -1; margin-left: 10px; padding-inline: 10px;">Welcome</h1>
+            <h1 class="animated-text" style="top:33%; animation-delay: 0.3s; padding-left: 13%;margin-top: 0px;padding-top: 253px;">to my</h1> 
+            <h1 class="animated-text h1-1" style="top:46.1%; animation-delay: 0.8s;margin-left: 13%;border: 3px solid chartreuse;z-index: -1; padding-bottom: 10px;">portfolio</h1>
+          </div> 
+          <div class="profile-picture">
+            <img src="profilepic.PNG" alt="Profile Picture">
+        </div>
+        </section>
+        <section id="about" class="about">
+                <div class="wire" id="wire5"></div>
+                <div class="wire" id="wire6"></div>
+                <div class="wire" id="wire7"></div>
+                <div class="wire" id="wire8"></div>
+
+            <div class="about-div">
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut culpa quia autem molestiae odio cupiditate, et eaque nisi eligendi voluptatem libero mollitia architecto minima facere fuga error ad quo asperiores consequuntur quod voluptates. Illo ex ab repudiandae eaque aliquid cum perspiciatis doloribus sunt asperiores eius animi pariatur, reiciendis corrupti!</p>
+            </div>
+            <h2 style="position: absolute;top: 70%; right: 46.5%; font-size: 30px;">Skills</h1>
+            <div class="skills-under-about">
+                <div class="skill" data-name=".NET">
+                    <i class="fas fa-file-code"></i> <!-- Placeholder for C# -->
+                </div>
+                <div class="skill" data-name="C#">
+                    <i class="fas fa-file-code"></i> <!-- Placeholder for C# -->
+                </div>
+                <div class="skill" data-name="CSS">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill" data-name="React">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="skill" data-name="JavaScript">
+                    <i class="fab fa-js-square"></i>
+                </div>
+            </div>
+            <a href="CV-1.pdf" class="download-cv-btn" download>Download CV</a>
+        </section>
+        <section id="projects" class="projects">
+            <div class="wire" id="wire9"></div>
+            <div class="wire" id="wire10"></div>
+            <div class="wire" id="wire11"></div>
+            <div class="wire" id="wire12"></div>
+            <div class="wire" id="wire13"></div>
+            <div class="wire" id="wire14"></div>
+            <div class="project-panel">
+                <div class="project-carousel">
+                    <div class="carousel-container">
+                        <img src="fittracker1.PNG" alt="Project 2" class="project-image active">
+                        <img src="fittracker2.PNG" alt="Project 1 - 2" class="project-image">
+                    </div>
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                </div>
+                <div class="project-title">
+                    Fitness Tracker
+                </div>
+                <div class="panel-text">
+                    <p>Exercise progression tracker built with ASP-MVC in .NET that stores the data in a SQL Server database.</p>
+                </div>
+            </div>
+            <div class="project-panel">
+                <div class="project-carousel">
+                    <div class="carousel-container">
+                        <img src="moviesreact1.PNG" alt="Project 2" class="project-image active">
+                        <img src="moviesreact2.PNG" alt="Project 1 - 2" class="project-image">
+                    </div>
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                </div>
+                <div class="project-title">
+                    Movie Search App
+                </div>
+                <div class="panel-text">
+                    <p>Search for movies and display details about each movie, as well as add them to a Watchlist. Built with React and Tailwind.</p>
+                </div>
+            </div>
+            <div class="project-panel">
+                <div class="project-carousel">
+                    <div class="carousel-container">
+                        <img src="ToDo.PNG" alt="Project 1 - 2" class="project-image">
+                    </div>
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                </div>
+                <div class="project-title">
+                    Productivity based To Do App
+                </div>
+                <div class="panel-text">
+                    <p>To Do app that includes a Pomodoro timer and on-page binuaral beats that will help you achieve lasor focus.</p>
+                </div>
+            </div>
+            <p>... and more on my <a style="text-decoration: none;color: chartreuse; font-weight: 600; " href="https://github.com/furiouskopan">GitHub</a></p>
+        </section>
+    </div>
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <img src="" alt="Full Screen Image" id="fullscreenImage" class="fullscreen-image">
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+        <button class="close-fullscreen" id="closeFullscreen">X</button>
+    </div>
+    <div class="circle-indicator">
+        <div class="circle" data-section="home"></div>
+        <div class="circle" data-section="about"></div>
+        <div class="circle" data-section="projects"></div>
+    </div>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Info</h2>
+            <p>Email: gorgikos20@gmail.com</p>
+            <p>Phone: (+389) 71 229 331</p>
+            <div class="social-links">
+                <a href="https://instagram.com/kostovgorgi" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/furiouskopan" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/gorgi-kostov-04828a282" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+.wire {
+    position: absolute;
+    width: 3px;
+    background-color: white;
+    transition: background-color 0.5s, box-shadow 0.2s;
+    z-index: 1;
+}
+
+.wire:hover {
+    background-color: chartreuse;
+    box-shadow: 5px 0 17px chartreuse;
+}
+#wire {
+    top: 0;
+    left: 6%; /* Assuming you want it in the center; adjust as needed */
+    z-index: 200;
+    height: 227px;
+}
+#wire2 {
+    top: 406px;
+    left: 6%; /* Assuming you want it in the center; adjust as needed */
+    z-index: 1;
+    height: 160px;
+}
+#wire2 {
+    top: 406px;
+    left: 6%; /* Assuming you want it in the center; adjust as needed */
+    z-index: 1;
+    height: 160px;
+}
+#wire3 {
+    top: 563px;  /* Adjust this based on where you want the line to start vertically */
+    left: 6%;   /* Starting position horizontally */
+    width: 133px; /* This determines the length of your horizontal line */
+    height: 3px; /* This makes it a line instead of a box */
+    z-index: 1;
+}
+#wire4 {
+    top: 563px;  /* Adjust this based on where you want the line to start vertically */
+    left: 862px;   /* Starting position horizontally */
+    width: 690px; /* This determines the length of your horizontal line */
+    height: 3px; /* This makes it a line instead of a box */
+    z-index: 1;
+}
+#wire5 {
+    top: 0;
+    left: 84%; /* Assuming you want it in the center; adjust as needed */
+    z-index: 200;
+    height: 478px;
+}
+#wire6 {
+    top: 477px;
+    left: 1210px;
+    width: 392px;
+    height: 3px;
+    z-index: 1;
+}
+#wire7 {
+    top: 478px;
+    left: 169px;
+    width: 524px;
+    height: 3px;
+    z-index: 1;
+}
+#wire8 {
+    top: 50%;
+    left: 166px; /* Assuming you want it in the center; adjust as needed */
+    z-index: 1;
+    height: 475px;
+}
+#wire9 {
+    top: 0%;
+    left: 166px; /* Assuming you want it in the center; adjust as needed */
+    z-index: 200;
+    height: 238px;
+}
+#wire10 {
+    top: 388px;
+    left: 622px;
+    width: 48px;
+    height: 3px;
+    z-index: 1;
+}
+#wire11 {
+    top: 388px;
+    left: 1233px;
+    width: 48px;
+    height: 3px;
+    z-index: 1;
+}
+#wire12 {
+    top: 511px;
+    left: 1713px;
+    z-index: 1;
+    height: 345px;
+}
+#wire13 {
+    top: 853px;
+    left: 208px;
+    width: 1505px;
+    height: 3px;
+    z-index: 1;
+}
+#wire14 {
+    top: 853px;
+    left: 208px;
+    z-index: 1;
+    height: 100px;
+}
+#wire15{
+    top: 442px;
+    left: 1599px;
+    z-index: 1;
+    height: 516px;
+}
+#wire16{
+    top: 440px;
+    left: 1550px;
+    z-index: 1;
+    height: 126px;
+}
+.hometext:hover .wire{
+    background-color: chartreuse;
+    box-shadow: 0 0 15px chartreuse;
+}
+.hometext{
+    position: absolute,
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.wire {
+    /* ... existing styles ... */
+    opacity: 0; /* Start as invisible */
+    animation: fadeIn 1s forwards; /* Apply the fadeIn animation over 1 second */
+}
+
+/* Delays for each wire */
+#wire { animation-delay: 0.5s; } /* Starts after 0.5 seconds */
+#wire1 { animation-delay: 1s; } /* Starts after 0.5 seconds */
+#wire2 { animation-delay: 1.2s; } /* Starts after 0.7 seconds */
+#wire3 { animation-delay: 1.5s; } /* Starts after 0.5 seconds */
+#wire4 { animation-delay: 1.8s; } /* Starts after 0.7 seconds */
+#wire15 { animation-delay: 2.5s; } /* Starts after 0.5 seconds */
+#wire16 { animation-delay: 2s; } /* Starts after 0.7 seconds */
