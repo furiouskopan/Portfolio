@@ -542,6 +542,23 @@ nav a.active {
         font-size: medium; /* or any other preferred value */
     }
 }
-@media only screen and (max-width: 900px) {
-    
+.me-text {
+    margin-left: 6px;
+}
+@media only screen and (max-width: 425px) {
+    .modal-content{
+        width: 60%;
+        height: 25%;
+        margin: 50% auto;
+        padding: 33px;
+    }
+    .me-text {
+        display: none; /* This will hide the 'Me' part when screen width is 425px or less */
+    }
+    .social-links{
+        margin-top: 50px;
+    }
+    .contact{
+        margin-top: 30px;
+    }
 }
