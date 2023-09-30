@@ -126,7 +126,6 @@ nav a:hover {
     background-color: #302f2f; /* deep dark gray */
     position: relative;
 
-
 }
 .home {
     position: relative;
@@ -502,11 +501,47 @@ nav a.active {
 .profile-picture:hover {
     box-shadow: 0 0 15px white, 0 0 20px chartreuse, 0 0 40px chartreuse, 0 0 90px chartreuse; /* glow effect on hover */
 }
-::-webkit-scrollbar {
-    width: 0px;  /* or whatever width you prefer */
-}
+
 @media (max-width: 1800px), (max-height: 820px) {
     .wire {
         display: none;
     }
+}
+@media only screen and (max-width: 1000px) {
+    .profile-picture {
+        right: 2%;
+    }
+    h1{
+        font-size: 120px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .projects{
+        gap: 0px;
+    }
+    .profile-picture {
+        display: none;
+    }
+    /* Stacking the panels on top of each other */
+    .project-panel {
+        width: 100%;
+        max-width: 600px; /* Set a max width to prevent over-stretching */
+        margin: 1.3vh auto; /* Centers the panel if it's less than 100% width */
+        margin-top: 10vh; /* Reduce this value */
+    }
+    .project-panel img {
+        max-height: 250px; /* Reduce this value */
+    }
+    /* Hide the description */
+    .panel-text {
+        display: none;
+    }
+    
+    /* Adjust title size if needed */
+    .project-title {
+        font-size: medium; /* or any other preferred value */
+    }
+}
+@media only screen and (max-width: 900px) {
+    
 }
